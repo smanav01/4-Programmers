@@ -1,8 +1,8 @@
 package datamanagement;
 import java.util.*;
 import java.io.*;
-public interface IStudent 
 
+public interface IStudent 
 {
     public Integer getID();
     public String getFirstName();
