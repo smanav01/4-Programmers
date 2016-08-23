@@ -1,11 +1,8 @@
 package datamanagement;
-
-/**
- * @author jtulip
- */
-
-public interface IStudentLister {
-
-    public void clearStudents();
-    public void addStudent(IStudent student);
+import java.util.*;
+import java.io.*;
+public interface IStudentLister
+{
+  public void clearStudents();
+  public void addStudent(IStudent student);
 }
