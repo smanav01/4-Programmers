@@ -6,7 +6,7 @@ public class ListUnitsCTL {
         um = UnitManager.UM();
     }
     public void listUnits(IUnitLister lister) {
-        lister.clearUnits(); //clear units
+        lister.clearUnits(); //clear unit
         UnitMap units = um.getUnits();
         for (String s: units.keySet())
             lister.addUnit(units.get(s)); //add units
