@@ -13,12 +13,12 @@ public class StudentManager { //Start of StudentManager class
         return self;
     }
 
-    private StudentManager() {
+    private StudentManager() { //method declaration
         sm = new StudentMap();
         um = new java.util.HashMap < > ();
     }
 
-    public IStudent getStudent(Integer id) {
+    public IStudent getStudent(Integer id) { //get student id
         IStudent is = sm.get(id);
         return is != null ? is : createStudent(id);
     }
@@ -30,6 +30,7 @@ public class StudentManager { //Start of StudentManager class
         return null;
     }
 
+/*This will check for the student id in the file, if not found , it will display the error message*/
     private IStudent createStudent(Integer id) {
         IStudent is;
         Element el = getStudentElement(id);
@@ -39,7 +40,7 @@ public class StudentManager { //Start of StudentManager class
             sm.put(is.getID(), is);
             return is;
         }
-        throw new RuntimeException("DBMD: createStudent : student not in file");
+        throw new RuntimeException("DBMD: createStudent : student not in file"); //displaying error
     }
 
     private IStudent createStudentProxy(Integer id) {
