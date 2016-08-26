@@ -2,7 +2,7 @@
 package datamanagement;
 import java.util.*; //importing utility class
 
-  public interface IStudent //class starts here
+  public interface IStudent 
   {
     public Integer getID();
 
