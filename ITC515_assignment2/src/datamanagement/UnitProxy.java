@@ -40,53 +40,112 @@ Method getUnitName
             	return this.un; 
         }
 
-/*
-Method setPsCutoff1
-@param
-	-cutoff
-
-*/
     public void setPsCutoff1(float cutoff) 
 	{
             	um.getUnit(UC).setPsCutoff1(cutoff);
 	}
-    public float getPsCutoff() 
+   
+/*
+Method getPsCutoff
+@return 
+	-getPsCutoff
+*/ 
+	public float getPsCutoff() 
 	{
         	return um.getUnit(UC).getPsCutoff();
 	}
+
+/*
+Method setCrCutoff
+@param
+	-Crcutoff
+
+*/
     public void setCrCutoff(float cutoff)
 	{
 		um.getUnit(UC).setCrCutoff(cutoff);
     	}
+
+/*
+Method getPsCutoff1
+@return
+	-Crcutoff
+
+*/
     public float getCrCutoff() 
 	{
 		return um.getUnit(UC).getCrCutoff();
     	}
 
+/*
+Method setDiCutoff
+@param
+	-Dicutoff
+
+*/
     public void setDiCutoff(float cutoff) 
 	{
 		um.getUnit(UC).setDiCutoff(cutoff);
 	}
+
+/*
+Method getDiCutoff1
+@return
+	-Dicutoff
+
+*/
     public float getDiCuttoff() 
 	{
 		return um.getUnit(UC).getDiCuttoff();
 	}
+
+/*
+Method setHdCutoff
+@param
+	-Hdcutoff
+
+*/
     public void setHdCutoff(float cutoff)
  	{
     		um.getUnit(UC).setHdCutoff(cutoff);
 	}
+/*
+Method getHdCutoff1
+@return
+	-Hdcutoff
+
+*/
     public float getHdCutoff() 
 	{
 	        return um.getUnit(UC).getHdCutoff();
 	}
+
+/*
+Method setAeCutoff
+@param
+	-Aecutoff
+
+*/
     public void setAeCutoff(float cutoff) 
 	{
 		um.getUnit(UC).setAeCutoff(cutoff);
     	}
+/*
+Method getAeCutoff1
+@return
+	-Aecutoff
+
+*/
     public float getAeCutoff() 	
 	{
 		return um.getUnit(UC).getAeCutoff();
 	}
+/*
+Method getGrade
+@param
+	-getGrade
+
+*/
     public String getGrade(float f1, float f2, float f3) 
 	{
 		return um.getUnit(UC).getGrade(f1, f2, f3);
