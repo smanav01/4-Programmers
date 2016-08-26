@@ -1,24 +1,51 @@
 /*import datamanagement package*/
 package datamanagement;
-public class UnitProxy implements IUnit {
+public class UnitProxy implements IUnit 
+	
+{
+
+// variable declaration 
 private String UC;
 private String un;
 UnitManager   um;
 
+/* constructor UnitProxy 
+	@param 
+		-unitCode and unitName
+*/
     public UnitProxy( String unitCode, String unitName ) 
 	{
         	this.UC = unitCode;
             	this.un = unitName;
                 um = UnitManager.UM(); 
 	}
-    public String getUnitCode() 	
+/*
+Method getUnitCode
+@return 
+	-UC
+*/
+    public String getUnitCode() 
 	{ 
             	return this.UC;
 	}
-    public String getUnitName() 	
+
+/*
+Method getUnitName
+@return 
+	-un
+*/
+
+    public String getUnitName()		 	
 	{ 
             	return this.un; 
         }
+
+/*
+Method setPsCutoff1
+@param
+	-cutoff
+
+*/
     public void setPsCutoff1(float cutoff) 
 	{
             	um.getUnit(UC).setPsCutoff1(cutoff);
