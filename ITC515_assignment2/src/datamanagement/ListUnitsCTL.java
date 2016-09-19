@@ -1,10 +1,14 @@
+/*import package*/
 package datamanagement;
-public class ListUnitsCTL {
+public class ListUnitsCTL { //declaring class 
     private UnitManager um;
-public ListUnitsCTL() {
+    public ListUnitsCTL() { //method declaration
         um = UnitManager.UM();
+    }
+    public void listUnits(IUnitLister lister) { //declaring default constructor
+        lister.clearUnits(); //clear units
+        UnitMap units = um.getUnits();
+        for (String s: units.keySet())
+            lister.addUnit(units.get(s)); //add units
+    }
 }
-            public void listUnits( IUnitLister lister ) {
-lister.clearUnits();UnitMap units = um.getUnits();
-        for (String s : units.keySet() )
-            lister.addUnit(units.get(s));}}
