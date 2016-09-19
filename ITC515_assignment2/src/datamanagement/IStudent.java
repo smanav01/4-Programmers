@@ -1,18 +1,20 @@
+/*import package*/
 package datamanagement;
+import java.util.*; //importing utility class
 
-public interface IStudent {
-
+  public interface IStudent 
+  {
     public Integer getID();
 
     public String getFirstName();
-    public void setFirstName(String firstName);
+    public void setFirstName(String firstName); //function for setting first name
 
     public String getLastName();
-    public void setLastName(String lastName);
+    public void setLastName(String lastName); //function for setting last name
 
-    public void addUnitRecord( IStudentUnitRecord record );
-    public IStudentUnitRecord getUnitRecord( String unitCode );
+    public void addUnitRecord( IStudentUnitRecord record ); /*adding units to student            record*/
+    public IStudentUnitRecord getUnitRecord( String unitCode ); //getting unit codes
 
-    public StudentUnitRecordList getUnitRecords();
+    public StudentUnitRecordList getUnitRecords(); 
 
-}
+   }
