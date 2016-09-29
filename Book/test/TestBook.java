@@ -4,10 +4,10 @@ import book.Book;
 public class TestBook {
 	public static void main(String[] args) {
 		
-		Book B1 = new Book("Shakespeare", "King Leare", "S12", 123);
-                Book B2 = new Book("Charles Dickens", "Great Expectations", "R32", 124);
-                Book B3 = new Book("Jane Austin", "Pride and Prejudice", "S12", 125);
-                Book B4 = new Book("George Orwell", "Animal Farm", "S12", 126);
+		Book B1 = new Book("Chetan Bhagat", "Two States", "S13", 124);
+                Book B2 = new Book("Rashmi Bhansal", "Stay Hungry Stay Foolish", "R33", 126);
+                Book B3 = new Book("Mahatma Gandhi", "My Experiments with Truth", "S15", 129);
+                Book B4 = new Book("Thomas Hardy", "Far from the Madding Crowd", "S17", 121);
 		
 		String author1 = B1.getAuthor(); 
                 String author2 = B2.getAuthor();
