@@ -43,7 +43,7 @@ public class Game {
 			player.receiveWinnings(winnings);
 		}
 		else {
-			player.takeBet(bet); // balance calculation correction
+			player.takeBet(bet); // correction in balance calculation
 		}
         return winnings;		
 	}

@@ -35,7 +35,7 @@ public class Main {
                 while (player.balanceExceedsLimitBy(bet) && player.getBalance() < 200)
                 {
                     turn++;             
-		    Dice d1 = new Dice(); //correction of dice values wich comes rendomly
+		    Dice d1 = new Dice(); //dice values has been cange which comes randomely
                     Dice d2 = new Dice();
                     Dice d3 = new Dice();
                     Game game = new Game(d1, d2, d3);
